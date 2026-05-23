@@ -1,16 +1,13 @@
 :root {
-  --ink: #f7efe2;
-  --muted: #cbbba8;
-  --line: rgba(247, 239, 226, 0.16);
-  --milk: #241c18;
-  --foam: #30251f;
-  --card: #f6ead8;
-  --card-ink: #211b18;
-  --card-muted: #6f6257;
-  --sage: #b4ca9a;
-  --coral: #ff9a76;
+  --ink: #202124;
+  --muted: #686f73;
+  --line: #e6dfd3;
+  --milk: #fffaf1;
+  --foam: #fff5e3;
+  --sage: #738b6f;
+  --coral: #e76f51;
   --coffee: #6b4f3f;
-  --sky: #b7d7dc;
+  --sky: #d8eef4;
 }
 
 * {
@@ -43,7 +40,7 @@ a {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(18px, 5vw, 64px);
-  background: rgba(36, 28, 24, 0.86);
+  background: rgba(255, 250, 241, 0.88);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
@@ -77,7 +74,7 @@ a {
 }
 
 .nav a:hover {
-  color: white;
+  color: var(--ink);
 }
 
 .hero {
@@ -158,14 +155,13 @@ p {
 }
 
 .button.primary {
-  background: var(--coral);
-  color: #211b18;
+  background: var(--ink);
+  color: white;
 }
 
 .button.secondary {
   border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--ink);
+  background: white;
 }
 
 .hero-photo {
@@ -176,10 +172,10 @@ p {
   overflow: hidden;
   border-radius: 32px 32px 8px 8px;
   background:
-    linear-gradient(135deg, rgba(36, 28, 24, 0.12), rgba(36, 28, 24, 0.42)),
+    linear-gradient(135deg, rgba(216, 238, 244, 0.8), rgba(255, 245, 227, 0.7)),
     url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80")
       center/cover;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 24px 70px rgba(32, 33, 36, 0.14);
 }
 
 .photo-card {
@@ -192,7 +188,7 @@ p {
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.55);
   border-radius: 8px;
-  background: rgba(246, 234, 216, 0.86);
+  background: rgba(255, 250, 241, 0.82);
   backdrop-filter: blur(12px);
 }
 
@@ -249,10 +245,9 @@ p {
 .features article,
 .dog-grid article {
   border-radius: 8px;
-  background: var(--card);
-  color: var(--card-ink);
+  background: white;
   padding: 24px;
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 14px 36px rgba(32, 33, 36, 0.06);
 }
 
 .features span {
@@ -269,7 +264,6 @@ p {
 
 .features p,
 .dog-grid p {
-  color: var(--card-muted);
   margin-bottom: 0;
   font-size: 15px;
 }
